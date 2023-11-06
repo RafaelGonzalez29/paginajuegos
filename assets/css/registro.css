@@ -1,0 +1,92 @@
+@font-face {
+    font-family: metropolis-regular;
+    src: url('../fonts/metropolis.regular.otf');
+}
+
+@font-face {
+    font-family:metropolis-black;
+    src: url('../fonts/metropolis.black.otf');
+}
+
+@font-face {
+    font-family:metropolis-bold;
+    src: url('../fonts/metropolis.bold.otf');
+}
+
+body.register-page{
+    background-color: #1F0A4E;
+}
+
+div.card-header{
+    background-color: #4618AC;
+}
+
+div.card-body{
+    background-color: #4618AC;
+}
+
+.login-box-msg{
+    color:white;
+    font-size: 1rem;
+}
+
+.tituloregistro{
+    color:white;
+}
+
+.tituloregistro:hover{
+    color:white;
+}
+
+.accede-hover:hover{
+    color:#D5B005;
+}
+
+.accede-hover{
+    text-decoration:none;
+    color:#FAD318;
+}
+
+input.form-control.colordelinput{
+    background-color: #3D1596;
+    border: 0px;
+    color: white;
+}
+
+.agreeTerms{
+    font-size: 0.8rem;
+    color:white;
+    font-family: metropolis-regular;
+}
+
+p.text-left.quitarespacios{
+    margin-top:15px; 
+    margin-bottom:-1.8%;
+    color: white;
+    font-size: 0.9rem;
+    
+}
+
+p.text-left.quitarespacios2{
+    margin-top:0; 
+    margin-bottom:-1.8%;
+    color: white;
+    font-size: 0.9rem;
+}
+
+
+p.text-left.quitarespacios3{
+    margin-top:0; 
+    margin-bottom:-1.8%;
+    color: white;
+    font-size: 0.9rem;
+}
+
+div.form-check{
+    margin-bottom: 10px;
+    padding: 0px;
+}
+
+.letracrear{
+    font-family:metropolis-bold;
+}

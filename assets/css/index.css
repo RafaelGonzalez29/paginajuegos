@@ -1,0 +1,114 @@
+
+@font-face {
+    font-family: metropolis-regular;
+    src: url('../fonts/metropolis.regular.otf');
+}
+
+@font-face {
+    font-family:metropolis-medium;
+    src: url('../fonts/metropolis.medium.otf');
+}
+
+@font-face {
+    font-family:metropolis-bold;
+    src: url('../fonts/metropolis.bold.otf');
+}
+
+@font-face {
+    font-family:metropolis-black;
+    src: url('../fonts/metropolis.black.otf');
+}
+.container-fluid{
+    align-items: center;
+    display: flex;
+    flex: 0.8;
+    
+}
+
+
+.navbar.navbar-expand-md.estilos-nav{
+    margin-bottom: 0px;
+    border-radius: 0px;
+   
+}
+
+.navbar.navbar-expand-md.estilos-nav2{
+    margin-bottom: 0px;
+    border-radius: 0px;
+   
+}
+
+
+.IconoGameflip{
+    width: 40px;
+    height: 41px;
+}
+
+div.input-group.rounded.input-busqueda{
+    width: 50%;
+}
+
+span#search-addon.input-group-text.border-0{
+    
+    background-color: transparent;
+}   
+
+
+
+.centrarelementos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.estilos-nav{
+    background-color: #4618AC;
+}
+
+.estilos-navegacion-titulos{
+    color: white;
+    font-family: metropolis-medium;
+    font-size: 0.9rem;
+}
+
+.estilos-navegacion-titulos:hover{
+    color:#FAD318;
+}
+
+
+.titulo-nav-gameflip{
+    color: white;
+    font-family: metropolis-bold;
+    font-size: 1.5rem;
+}
+
+.centrar-icon-login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hovericono:hover{
+    color:#FAD318;
+}
+
+.estilos-navegacion-login:hover{
+    color:#FAD318;
+}
+
+.estilos-navegacion-login{
+    color: white;
+    font-family: metropolis-medium;
+    font-size: 0.9rem;
+}
+
+.estilos-nav2{
+    background-color:#1F0A4D;
+}
+
+input.form-control.colordelinput{
+    background-color: #3D1596;
+}
+
+
+
