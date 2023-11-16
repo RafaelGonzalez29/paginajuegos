@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -10,6 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/index.css">
     
+  
     
     <title>Gameflip</title>
   </head>
@@ -48,21 +53,38 @@
           <div class="centrar-icon-login">
             <li class="nav-item ">  
               <div class="hovericono">          
-                <a class="nav-link activate estilos-navegacion-login" href="#login.php">
+                <a class="nav-link activate estilos-navegacion-login" id="nav_iniciarsesion" href="views/login.php">
                   <i class="fa-solid fa-user "></i> Iniciar sesion
                 </a> 
               </div> 
             </li>
             
             <div class="contenedor-separador">
-              <span class="estilos-navegacion-titulos">&nbsp;| &nbsp;</span>
+              <span class="estilos-navegacion-titulos" id="nav-separador">&nbsp;| &nbsp;</span>
             </div>
             <li class="nav-item">
-              <a class="nav-link activate estilos-navegacion-titulos" href="views/registro.php">Registrarse</a>
+              <a class="nav-link activate estilos-navegacion-titulos" id="nav_registro" href="views/registro.php">Registrarse</a>
             </li>
-            </div>
-          </ul>
+            <li class="nav-item" >
+              <a href=""  class="btn estilos-navegacion-titulos">CARRITO <span class="badge">0</span></a>
+            </li> 
+            
           
+            <li class="nav-item nav-item-dropdown" id="nav_usuario">
+              <a class="nav-link dropdown-toggle activate estilos-navegacion-titulos" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                         
+                <img id="avatar_nav" src='' width="30" height="30" class="redonda"> &nbsp;
+                <span id="usuario_nav">
+                
+                </span>               
+              </a>
+              <div class="dropdown-menu " aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item " href="/paginajuegos/controller/cerrarsesion.php"><i class="bi bi-person-fill-x"></i></i> Cerrar sesion</a>
+              </div>
+            </li>   
+          </div>
+          </ul>
+        
         </div>
       </div>
 
