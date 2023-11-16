@@ -1,3 +1,16 @@
+<?php
+  /*TODO: Llamando Cadena de Conexion */
+  require_once("../config/conex.php");
+
+  if(isset($_POST["enviar"]) and $_POST["enviar"]=="si"){
+    require_once("../models/login.php");
+    /*TODO: Inicializando Clase */
+    $login = new Login();
+    $login->login();
+  }
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,12 +38,13 @@
 <div class="register-box">
   <div class="card ">
     <div class="card-header text-center">
-      <a href="registro.php" class="h2 tituloregistro"><b>Crear una cuenta</b></a>
+      <a href="registro.php" class="h2 tituloregistro"><b>Iniciar sesión</b></a>
     </div>
+   
     <div class="card-body">
-      <p class="login-box-msg">¿Ya tienes una cuenta? <a class="accede-hover" href="login.php">Accede</a></p>
+      <p class="login-box-msg">¿Nuevo usuario? <a class="accede-hover" href="registro.php">Crea una cuenta</a></p>
 
-      <form id="formulario_registro" method="post" >
+      <form id="formulario_login" method="post" >
         <div class="input-group mb-3">
           <input type="text" class="form-control colordelinput" name="nombre_usuario" id="nombre_usuario" placeholder="Nombre de usuario" >
           
@@ -44,19 +58,12 @@
         
         
         <div class="row">
-          <div class="col-12">
-            <div class="form-check">
-              <input type="checkbox" id="agreeTerms" name="terms" value="agree" required>
-              <label for="agreeTerms" class="agreeTerms">
-               Acepto los terminos
-              </label>
-            </div>
-          </div>
+          
           
           <!-- /.col -->
           <div class="col-12">
-            
-            <button type="submit" class="btn btn-warning btn-block letracrear">Crear una cuenta</button>
+            <input type="hidden" name="enviar" id="enviar" class="form-control" value="si">
+            <button type="submit" class="btn btn-warning btn-block letracrear">Iniciar sesión</button>
           </div>
           <!-- /.col -->
         </div>
@@ -78,7 +85,6 @@
 <!-- AdminLTE App -->
 <script src="../html/dist/js/adminlte.min.js"></script>
 
-<script src="./js/registro.js"></script>
 
 </body>
 </html>
