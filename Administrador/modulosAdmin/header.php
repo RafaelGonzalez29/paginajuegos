@@ -6,16 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">  
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"> 
 
     <link rel="stylesheet" href="../assets/css/estilos.admin.css">
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">    
     
+
+    <link rel="stylesheet" href="../assets/css/sweetalert2.min.css">
+    <link rel="stylesheet" href="../assets/css/select2.min.css">    
+    
+
+    <link href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
+    <link href="../html/plugins/datatables-buttons/css/buttons.bootstrap4.min.css" rel="stylesheet"/>
+    <!--Select2.-->
+     <link href="../html/plugins/select2/css/select2.min.css" rel="stylesheet"/>
+     <link rel="stylesheet" href="/paginajuegos/html/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+     <link rel="stylesheet" href="/paginajuegos/html/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+     <link rel="stylesheet" href="/paginajuegos/html/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
+    
+    
     <title>Gameflip</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-md estilos-nav">
+   
+  <nav class="navbar navbar-expand-md estilos-nav">
       <div class="container-fluid ">
         <a href="index.php" class="navbar-brand">
         <svg width="40" height="40" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -37,26 +54,41 @@
         
           <ul class="navbar-nav pull-right">
             <li class="nav-item ">
-              <a class="nav-link activate estilos-navegacion-titulos" href="videojuegos.php">Videojuegos</a>
+              <a class="nav-link activate estilos-navegacion-titulos marginpedidosyvideo" href="videojuegos.php">Videojuegos</a>
             </li>
+            
             <li class=" nav-item ">
-              <a class="nav-link activate estilos-navegacion-titulos" href="pedidos.php">Pedidos</a>
+              <a class="nav-link activate estilos-navegacion-titulos marginpedidosyvideo" href="pedidos.php">Pedidos</a>
             </li>
           <div class="centrar-icon-login">
             <li class="nav-item ">  
               <div class="hovericono">          
-                <a class="nav-link activate estilos-navegacion-login" href="#login.php">
+                <a class="nav-link activate estilos-navegacion-login" id="nav_iniciarsesion" href="#login.php">
                   <i class="fa-solid fa-user "></i> Iniciar sesion
                 </a> 
               </div> 
             </li>
             <div class="contenedor-separador">
-              <span class="estilos-navegacion-titulos">&nbsp;| &nbsp;</span>
+              <span class="estilos-navegacion-titulos" id="nav-separador">&nbsp;| &nbsp;</span>
             </div>
             <li class="nav-item">
-              <a class="nav-link activate estilos-navegacion-titulos" href="views/registro.php">Registrarse</a>
+              <a class="nav-link activate estilos-navegacion-titulos" id="nav_registro" href="views/registro.php">Registrarse</a>
             </li>
             </div>
+            <li class="nav-item"  id="nav_usuario">
+              <div class="dropdown show">
+              <a class="nav-link dropdown-toggle activate estilos-navegacion-titulos" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img id="avatar_nav" src='' width="30" height="30" class="redonda"> &nbsp;
+              <span id="usuario_nav"></span></a>
+                   <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    
+                   <a class="dropdown-item " href="/paginajuegos/controller/cerrarsesion.php"><i class="bi bi-person-fill-x"></i></i> Cerrar sesion</a>
+
+              </div>
+
+            </li>
+            
+            
           </ul>
           
         </div>
