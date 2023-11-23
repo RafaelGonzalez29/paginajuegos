@@ -44,7 +44,7 @@ formulario_registro.addEventListener("submit", e=>{
 
         console.log(clave);
        
-        $.post('/paginajuegos/controller/registro.php?opc=registrar_usuario', {nombre_usuario,clave},(data)=>{
+        $.post('/tiendajuegos/controller/registro.php?opc=registrar_usuario', {nombre_usuario,clave},(data)=>{
 
             location.href= 'login.php';
 
