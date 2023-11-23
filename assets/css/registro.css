@@ -60,26 +60,28 @@ input.form-control.colordelinput{
 }
 
 p.text-left.quitarespacios{
-    margin-top:15px; 
-    margin-bottom:-1.8%;
+    margin-top:25px; 
+    margin-bottom:-1.5%;
     color: white;
-    font-size: 0.9rem;
-    
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 p.text-left.quitarespacios2{
     margin-top:0; 
-    margin-bottom:-1.8%;
+    margin-bottom:-1.5%;
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 p.text-left.quitarespacios3{
     margin-top:0; 
-    margin-bottom:-1.8%;
+    margin-bottom:-1.5%;
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 div.form-check{
@@ -89,4 +91,40 @@ div.form-check{
 
 .letracrear{
     font-family:metropolis-bold;
+}
+
+.letrapequeña{
+    font-size: 0.9rem;
+    color: white;
+}
+
+.colorcito{
+    color: #73cdff;
+}
+
+.warnings{
+	color: #DE3D1B;
+    text-align: left;
+    background-color: #FFB2C7;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-bottom: 5px;
+
+}
+
+.warning{
+	color: #DE3D1B;
+    text-align: left;
+    background-color: #FFB2C7;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    margin-bottom: 5px;
+   
+    
+}
+
+i.bi.bi-exclamation-circle{
+    margin-left: 8px;
 }

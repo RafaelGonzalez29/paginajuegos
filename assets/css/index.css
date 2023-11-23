@@ -112,3 +112,15 @@ input.form-control.colordelinput{
 
 
 
+a.nav-link.activate.estilos-navegacion-titulos{
+    padding: 8px;
+}
+
+a.nav-link.activate.estilos-navegacion-login{
+    padding: 8px;
+}
+
+.redonda {
+   
+    border-radius:150px;
+}

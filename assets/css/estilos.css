@@ -24,6 +24,7 @@
 .main-login{
 	max-width: 300px;
 	margin: 0 auto;
+	
 }
 
 .footer{
@@ -47,3 +48,4 @@ nav.navbar.navbar-default.navbar-fixed-top{
 .container{
 	display: flex;
 }
+

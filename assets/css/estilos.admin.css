@@ -26,12 +26,16 @@
 }
 
 
+
+
 span.titulo-nav-gameflip{
     margin-left: 6px;
 }
 div#menu.collapse.navbar-collapse{
     padding-left: 0px;
     padding-right: 0px;
+    
+    
 }
 
 .navbar.navbar-expand-md.estilos-nav{
@@ -101,9 +105,10 @@ a.navbar-brand{
     margin-left: 0px;
     padding-top: 5px;
     padding-bottom: 5px;
-    margin-right: 16px;
+    margin-right: 15px;
     margin-left: -15px;
     padding-left: 15px;
+    
 }
 
 
@@ -157,3 +162,113 @@ input.form-control.colordelinput{
     margin-top: 4rem;
     margin-bottom: 4rem;    
 }
+
+.Swal.fire{
+    height: 1200px  !important;
+    width: 800px  !important;
+}
+
+.color-negro{
+    background-color: black;
+}
+
+.redonda{
+    border-radius:150px;
+}
+
+.nav-item{
+    justify-content: center;
+    align-items: center;
+} 
+
+.marginpedidosyvideo{
+    margin-top: 6px;
+}
+
+.panel-title{
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+}
+#main{
+        margin-top: 20px;
+        margin-bottom: 100px;
+}
+
+.u-size-100{
+	width: 100px;
+	text-align: center;
+}
+
+.main-form{
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.panel-info>.panel-heading{
+	color: #ffffff;
+    background-color: #e95420;
+}
+.main-login{
+	max-width: 300px;
+	margin: 0 auto;
+}
+
+.footer{
+	margin-top: 100px;
+  
+}
+
+.titulo-pelicula{
+	font-size: 15px;
+	margin: 0;
+	font-weight: bold;
+}
+
+span.letra-compra{
+
+    font-family:metropolis-medium;
+}
+
+
+div.col-12{
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+
+h5.my-0.margendelcarrito{
+    align-items: center;
+    text-align: center;
+}
+
+button.btn.btn-link{
+    align-items: start !important;
+}
+
+button#nav-carrito.btn.btn-primary.mb-2{
+    background: none;
+    border: 0;
+    color: inherit;
+    /* cursor: default; */
+    font: inherit;
+    line-height: normal;
+    overflow: visible;
+    padding: 0;
+    margin-bottom: 0px !important;
+   
+  }
+
+
+  .centrarimagen{
+    height: 100px;
+    width: 100px;
+ 
+  }
+
+  .contenedor-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
