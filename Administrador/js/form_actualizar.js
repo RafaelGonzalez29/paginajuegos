@@ -6,7 +6,7 @@ $(document).ready(function() {
 
   function verificar_sesion(){
      
-      $.post('/paginajuegos/controller/login.php?opc=verificar_sesion', (data)=> {
+      $.post('/tiendajuegos/controller/login.php?opc=verificar_sesion', (data)=> {
           console.log(data);
           console.log(Object.keys(data).length);
           if((Object.keys(data).length)>3 ){
@@ -55,7 +55,7 @@ select_genero();
    
     
   function select_genero(){
-    $.post("/paginajuegos/controller/videojuegos.php?opc=mostrar_categorias", function(data){
+    $.post("/tiendajuegos/controller/videojuegos.php?opc=mostrar_categorias", function(data){
         $('#id_categoria').html(data);
         console.log(data);
     });
@@ -79,7 +79,7 @@ console.log(id_juego);
 
 $(document).ready(function(){
 
-  $.post("/paginajuegos/controller/videojuegos.php?opc=mostrar", {id_juego : id_juego}, function(data){ 
+  $.post("/tiendajuegos/controller/videojuegos.php?opc=mostrar", {id_juego : id_juego}, function(data){ 
       data =JSON.parse(data);
       $('#titulo').val(data.titulo);
       $('#descripcion').val(data.descripcion);
@@ -111,7 +111,7 @@ function guardaryeditar(e){
           
   $.ajax({ 
       type: "POST",
-      url: '/paginajuegos/controller/videojuegos.php?opc=editar',
+      url: '/tiendajuegos/controller/videojuegos.php?opc=editar',
       data: datos,
       cache: false,
       processData: false,

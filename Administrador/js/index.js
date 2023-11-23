@@ -5,7 +5,7 @@ $(document).ready(function() {
 
     function verificar_sesion(){
        
-        $.post('/paginajuegos/controller/login.php?opc=verificar_sesion', (data)=> {
+        $.post('/tiendajuegos/controller/login.php?opc=verificar_sesion', (data)=> {
             console.log(data);
             console.log(Object.keys(data).length);
             if((Object.keys(data).length)>3 ){
